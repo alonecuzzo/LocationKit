@@ -2,19 +2,15 @@
 
 ## Instructions
 
-1. Install Swagger:
+1. Install
 ```
-$ npm install -g swagger
+$ npm install
 ```
-2. Install Crypto:
-```
-$ npm install crypto --save
-```
-3. Start the project:
+2. Start the project:
 ```
 $ swagger project start
 ```
-4. Then from a different terminal open the swagger editor:
+3. Then from a different terminal open the swagger editor:
 ```
 $ swagger project edit
 ```
