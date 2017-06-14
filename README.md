@@ -2,9 +2,9 @@
 
 ## Instructions
 
-1. Install
+1. Install Swagger package and project packages
 ```
-$ npm install
+$ npm install -g swagger && npm install
 ```
 2. Start the project:
 ```

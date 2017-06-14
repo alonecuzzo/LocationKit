@@ -1,19 +1,19 @@
 'use strict';
 // Include our "db"
-var db = require('../../config/db')();
+var db = require('../../config/locationDb')();
 // Exports all the functions to perform on the db
-module.exports = {getAll, save, getOne, update, delLocation};
+module.exports = {getAllLocations, saveLocation, getOneLocation, updateLocation, delLocation};
 
 //GET /location operationId
-function getAll(req, res, next) {
+function getAllLocations(req, res, next) {
   res.json({ locations: db.find()});
 }
 //POST /location operationId
-function save(req, res, next) {
+function saveLocation(req, res, next) {
     res.json({success: db.save(req.body), description: "Location added to the list!"});
 }
 //GET /location/{id} operationId
-function getOne(req, res, next) {
+function getOneLocation(req, res, next) {
     var id = req.swagger.params.id.value; //req.swagger contains the path parameters
     var location = db.find(id);
     if(location) {
@@ -25,7 +25,7 @@ function getOne(req, res, next) {
     }
 }
 //PUT /location/{id} operationId
-function update(req, res, next) {
+function updateLocation(req, res, next) {
     var id = req.swagger.params.id.value; //req.swagger contains the path parameters
     var location = req.body;
     if(db.update(id, location)){
