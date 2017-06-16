@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Collection
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-06-16T18:00:08.808Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-06-16T18:00:17.057Z")
 public class Collection {
   @SerializedName("id")
   private String id = null;

@@ -9,7 +9,7 @@ import io.swagger.client.model.Collection;
 /**
  * GetCollectionResponse
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-06-16T18:00:08.808Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-06-16T18:00:17.057Z")
 public class GetCollectionResponse {
   @SerializedName("collection")
   private Collection collection = null;
